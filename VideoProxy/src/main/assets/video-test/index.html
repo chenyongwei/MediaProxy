@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset='utf-8'>
   <title>HTML5 Video</title>
@@ -10,113 +10,21 @@
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <h1>HTML5 Video Events and API</h1>
-
-  <p>This page demonstrates the new <a
-  href='http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element'>HTML5 video
-  element</a>, its <a
-  href='http://www.w3.org/TR/html5/embedded-content-0.html#htmlmediaelement'>media API</a>, and the <a
-  href='http://www.w3.org/TR/html5/embedded-content-0.html#mediaevents'>media events</a>. Play, pause, and seek in the entire
-  video, change the volume, mute, change the playback rate (including
-  going into negative values). See the effect on the video and on the
-  underlying events and properties.</p>
+  <h1>VideoProxy API</h1>
 
   <div>
-    <video id='video'
-      controls preload='none' 
-      poster="poster.png">
-      <source id='mp4'
-        src="trailer.mp4"
-        type='video/mp4'>
-      <source id='webm'
-        src="http://media.w3.org/2010/05/sintel/trailer.webm"
-        type='video/webm'>
-      <source id='ogv'
-        src="http://media.w3.org/2010/05/sintel/trailer.ogv"
-        type='video/ogg'>
-      <p>Your user agent does not support the HTML5 Video element.</p>
-    </video>
     <div id='buttons'>
-      <button onclick="document._video.setSrc('http://mobiledev.englishtown.com/offline-package/res/1/mediares/juno/school/videos/testvideo.mp4')">setSrc()</button>
+      <button onclick="document._video.setSource('http://mobiledev.englishtown.com/offline-package/res/1/mediares/juno/school/videos/testvideo.mp4')">setSource('filePath')</button>
       <button onclick="document._video.play()">play()</button>
       <button onclick="document._video.pause()">pause()</button>
-      <button onclick="document._video.currentTime+=10">currentTime+=10</button>
-      <button onclick="document._video.currentTime-=10">currentTime-=10</button>
-      <button onclick="document._video.currentTime=50">currentTime=50</button><br>
-      <button onclick="document._video.playbackRate++">playbackRate++</button>
-      <button onclick="document._video.playbackRate--">playbackRate--</button>
-      <button onclick="document._video.playbackRate+=0.1">playbackRate+=0.1</button>
-      <button onclick="document._video.playbackRate-=0.1">playbackRate-=0.1</button><br>
-      <button onclick="document._video.volume+=0.1">volume+=0.1</button>
-      <button onclick="document._video.volume-=0.1">volume-=0.1</button>
-      <button onclick="document._video.muted=true">muted=true</button>
-      <button onclick="document._video.muted=false">muted=false</button><br>
-      <button onclick="switchVideo(0);">Sintel teaser</button>
-      <button onclick="switchVideo(1);">Bunny trailer</button>
-      <button onclick="switchVideo(2);">Bunny movie</button>
-      <button onclick="switchVideo(3);">Test movie</button>
+        <button onclick="document._video.stop()">stop()</button>
+      <button onclick="document._video.forwardCurrentTime(5)">forwardCurrentTime(5)</button>
+      <button onclick="document._video.backwardCurrentTime(5)">backwardCurrentTime(5)</button>
+      <button onclick="document._video.setCurrentTime(5)">setCurrentTime(5)</button><br>
+       <button onclick="document._video.setLayout(100, 300, 600, 300)">setLayout(100, 300, 600, 300)</button><br>
     </div>
-    <table>
-      <caption>Media Events</caption>
-      <tbody id='events'>
-      </tbody>
-    </table>
-    <table>
-      <caption>Media Properties</caption>
-      <tbody id='properties'>
-      </tbody>
-    </table>
-
-    <table id='canPlayType'>
-      <caption>canPlayType</caption>
-      <tbody id='m_video'>
-      </tbody>
-    </table>
-
-    <table id='tracks'>
-      <caption>Tracks</caption>
-      <tbody>
-	<tr>
-	  <th>Audio</th>
-	  <th>Video</th>
-	  <th>Text</th>
-	</tr>
-	<tr>
-	  <td id='m_audiotracks' class='false'>?</td>
-	  <td id='m_videotracks' class='false'>?</td>
-	  <td id='m_texttracks' class='false'>?</td>
-	</tr>
-      </tbody>
-    </table>
-
-<!--
-  <div id='canPlayType'>
-      // @@TODO canPlayType
-    </div>
-    -->
   </div>
 
-<h2>Limitations</h2>
+</body>
 
-  <ul>
-    <li>Some events may be fired despite the lack of effect on the video itself,
-    in particular while trying to change the playback rate;</li>
-    <li>Not all conditions are necessarily there to generate every single
-    possible event, such as <code>stalled</code> or <code>emptied</code>;</li>
-    <li>The rendered page may not be updated while the video is
-     playing. Thus you may see plenty of <code>timeupdate</code>
-     events counted after the video is paused/stopped;</li>
-    <li>Remember, HTML5 Video is still work in progress, so anything
-    on this page may be deprecated tomorrow and no longer part of
-    HTML5;</li>
-   </ul>
-<hr>
-
-<address>plh@w3.org - February 2013</address>
-<p>
-Many, many thanks to the <a href='http://www.blender.org/blenderorg/blender-foundation/'>Blender
-Foundation</a> and the community around the <a href='http://www.blender.org/'>blender project</a>.
-</p>
-
-     </body>
 </html>

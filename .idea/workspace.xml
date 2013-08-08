@@ -24,30 +24,32 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MediaJSProxy" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MediaJS" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" name="Default" comment="" />
     <ignored path="VideoProxy.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/activity_main.xml" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375863379903" ignored="false" />
-    <file path="/MainActivity.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375945626080" ignored="false" />
+    <file path="/activity_main.xml" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375959551133" ignored="false" />
+    <file path="/MainActivity.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375957385269" ignored="false" />
     <file path="$PROJECT_DIR$/VideoProxy/build/res/all/debug/layout/activity_main.xml" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375865189776" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375946142648" ignored="false" />
-    <file path="/*.regexp" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375871921726" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375960545376" ignored="false" />
+    <file path="/*.regexp" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375956913171" ignored="false" />
     <file path="/Dummy.txt" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375870250272" ignored="false" />
     <file path="/fragment.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375932571601" ignored="false" />
-    <file path="/index.html" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375945565320" ignored="false" />
+    <file path="/index.html" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375959605471" ignored="false" />
     <file path="/VideoJsInterface.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375873458465" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/gen/com/ef/efekta/englishtown/R.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375873654483" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/gen/com/ef/efekta/englishtown/Manifest.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375873654483" ignored="false" />
-    <file path="/video-proxy.js" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375933850185" ignored="false" />
+    <file path="/video-proxy.js" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375948964896" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/gen/com/ef/efekta/englishtown/BuildConfig.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375873727357" ignored="false" />
     <file path="/VideoJsProxy.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375883864113" ignored="false" />
     <file path="/MediaPlayerExt.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375929646942" ignored="false" />
     <file path="/_Constant.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375883014200" ignored="false" />
-    <file path="/MediaJsProxy.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375946060073" ignored="false" />
-    <file path="$PROJECT_DIR$/VideoProxy/build/source/r/debug/com/example/videoproxy/R.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375933868086" ignored="false" />
+    <file path="/MediaJsProxy.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375960230531" ignored="false" />
+    <file path="$PROJECT_DIR$/VideoProxy/build/source/r/debug/com/example/videoproxy/R.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375960502886" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/src/com/ef/efekta/StepActivity.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375956766528" ignored="false" />
+    <file path="/StepActivity.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375956766836" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,19 +113,16 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="45" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#823#1133#0" expanded="true" />
-                <element signature="e#1122#1123#0" expanded="true" />
-              </folding>
+            <state line="38" column="46" selection-start="1259" selection-end="1409" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_Constant.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Constant.java">
+      <file leaf-file-name="AssetFileDescriptor.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/res/AssetFileDescriptor.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.28537455">
+            <state line="27" column="0" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,45 +131,76 @@
       <file leaf-file-name="MediaJsProxy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaJsProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="5" selection-start="1308" selection-end="1308" vertical-scroll-proportion="-17.04">
+            <state line="45" column="63" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-20.88">
               <folding>
-                <element signature="e#1777#2132#0" expanded="true" />
-                <element signature="e#2121#2122#0" expanded="true" />
-                <element signature="e#2188#2340#0" expanded="true" />
-                <element signature="e#2329#2330#0" expanded="true" />
-                <element signature="e#2397#2558#0" expanded="true" />
-                <element signature="e#2547#2548#0" expanded="true" />
-                <element signature="e#3102#3276#0" expanded="true" />
-                <element signature="e#3265#3266#0" expanded="true" />
-                <element signature="e#3317#3670#0" expanded="true" />
-                <element signature="e#3659#3660#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#686#1256#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#3165#3520#0" expanded="true" />
+                <element signature="e#3509#3510#0" expanded="true" />
+                <element signature="e#3576#3728#0" expanded="true" />
+                <element signature="e#3717#3718#0" expanded="true" />
+                <element signature="e#3785#3946#0" expanded="true" />
+                <element signature="e#3935#3936#0" expanded="true" />
+                <element signature="e#6127#6354#0" expanded="true" />
+                <element signature="e#6339#6340#0" expanded="true" />
+                <element signature="e#6399#6821#0" expanded="true" />
+                <element signature="e#6806#6807#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MediaPlayer.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/media/MediaPlayer.class">
+      <file leaf-file-name="poster.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/poster.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/view/View.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="0" selection-start="7962" selection-end="7962" vertical-scroll-proportion="0.0">
+            <state line="167" column="19" selection-start="9319" selection-end="9319" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/script.js">
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="18" selection-start="0" selection-end="7314" vertical-scroll-proportion="0.0">
+            <state line="27" column="0" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-15.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Message.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/Message.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="19" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Handler.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/Handler.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="25" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="54" selection-start="1687" selection-end="1687" vertical-scroll-proportion="-20.0">
+            <state line="17" column="43" selection-start="529" selection-end="529" vertical-scroll-proportion="0.31755915">
               <folding />
             </state>
           </provider>
@@ -179,25 +209,7 @@
       <file leaf-file-name="video-proxy.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/video-proxy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="59" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VideoView.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/VideoView.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Context.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/Context.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="73" selection-start="3992" selection-end="3992" vertical-scroll-proportion="0.0">
+            <state line="43" column="35" selection-start="1528" selection-end="1538" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,15 +226,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/VideoProxy/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/VideoProxy/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/VideoJsInterface.java" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/VideoJsProxy.java" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaPlayerExt.java" />
-        <option value="$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/video-proxy.js" />
-        <option value="$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/index.html" />
-        <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java" />
-        <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaJsProxy.java" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Constant.java" />
+        <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java" />
+        <option value="$PROJECT_DIR$/VideoProxy/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/video-proxy.js" />
+        <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaJsProxy.java" />
+        <option value="$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/index.html" />
       </list>
     </option>
   </component>
@@ -311,6 +323,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoProxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoProxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoProxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoProxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoProxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoProxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -520,6 +588,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" name="Default" comment="" />
@@ -527,18 +600,41 @@
       <updated>1375862854021</updated>
       <workItem from="1375863195334" duration="2950000" />
       <workItem from="1375866905170" duration="16408000" />
-      <workItem from="1375884203263" duration="12501000" />
+      <workItem from="1375884203263" duration="25642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31859000" />
+    <option name="totallyTimeSpent" value="45000000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1330" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32895783" sideWeight="0.6404959" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.6404959" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -547,17 +643,14 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28181818" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29338843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980111" sideWeight="0.7181818" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980111" sideWeight="0.7066116" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.6710744" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.6710744" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -625,65 +718,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#823#1133#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/res/AssetManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="43" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.36862245" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/Context.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="73" selection-start="3992" selection-end="3992" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/VideoView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -695,58 +732,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/script.js">
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="18" selection-start="0" selection-end="7314" vertical-scroll-proportion="0.0">
+        <state line="9" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/index.html">
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="54" selection-start="1687" selection-end="1687" vertical-scroll-proportion="-20.0">
+        <state line="11" column="95" selection-start="330" selection-end="335" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/VideoView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="0" selection-start="2961" selection-end="2961" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="25" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/res/AssetFileDescriptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="46" selection-start="1259" selection-end="1409" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="19" selection-start="9319" selection-end="9319" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/poster.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/video-proxy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="59" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+        <state line="43" column="35" selection-start="1528" selection-end="1538" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaJsProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="5" selection-start="1308" selection-end="1308" vertical-scroll-proportion="-17.04">
+        <state line="45" column="63" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-20.88">
           <folding>
-            <element signature="e#1777#2132#0" expanded="true" />
-            <element signature="e#2121#2122#0" expanded="true" />
-            <element signature="e#2188#2340#0" expanded="true" />
-            <element signature="e#2329#2330#0" expanded="true" />
-            <element signature="e#2397#2558#0" expanded="true" />
-            <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#3102#3276#0" expanded="true" />
-            <element signature="e#3265#3266#0" expanded="true" />
-            <element signature="e#3317#3670#0" expanded="true" />
-            <element signature="e#3659#3660#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#686#1256#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#3165#3520#0" expanded="true" />
+            <element signature="e#3509#3510#0" expanded="true" />
+            <element signature="e#3576#3728#0" expanded="true" />
+            <element signature="e#3717#3718#0" expanded="true" />
+            <element signature="e#3785#3946#0" expanded="true" />
+            <element signature="e#3935#3936#0" expanded="true" />
+            <element signature="e#6127#6354#0" expanded="true" />
+            <element signature="e#6339#6340#0" expanded="true" />
+            <element signature="e#6399#6821#0" expanded="true" />
+            <element signature="e#6806#6807#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="45" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#823#1133#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.28537455">
+        <state line="17" column="43" selection-start="529" selection-end="529" vertical-scroll-proportion="0.31755915">
           <folding />
         </state>
       </provider>

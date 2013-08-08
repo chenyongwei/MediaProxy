@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.webkit.*;
 import android.widget.VideoView;
 
+import java.io.File;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class MainActivity extends Activity {
@@ -34,8 +35,12 @@ public class MainActivity extends Activity {
             }
         });
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("file:///android_asset/video-test/index.html");
 
+//        File filesDir = getApplicationContext().getAssets().openFd("index.html").getFileDescriptor();
+//        String appPath = filesDir.getPath();
+//        Log.d("application path", appPath);
+        webView.loadUrl("file:///android_asset/video-test/index.html");
+//        webView.loadUrl("file:///data/data/com.example.videoproxy/files/video-test/index.html");
         // this is the only code to startup the MediaJsProxy
         new MediaJsProxy(videoView, webView);
     }

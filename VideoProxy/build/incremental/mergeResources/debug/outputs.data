@@ -1,13 +1,13 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1375863204000 203 19aedb7cdc3386344e36087b035a0a6b2b91d4cd /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/values-v11/values.xml
-1375863204000 788 566094e9b20021f28cabbad3e0bb23021188d6b6 /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/values/values.xml
-1375863204000 3760 9d45e7de00dac30e9738dc369dece2835bf9677e /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/drawable-mdpi/ic_launcher.png
 1375863204000 7783 03172612ec7d8d2cc6295a185410c3e6501771aa /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/drawable-hdpi/ic_launcher.png
 1375863204000 217 f02e000d05a079992d2dba18039216c1e6b8784f /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/values-v14/values.xml
 1375863204000 125 fae9d1b71d520745438010c9ca7cde9c81dfefac /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/values-sw720dp-land/values.xml
 1375863204000 244 045ff451db7cd8e61285502b8c9bbf7405f2078d /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/menu/main.xml
+1375863204000 203 19aedb7cdc3386344e36087b035a0a6b2b91d4cd /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/values-v11/values.xml
 1375863204000 24780 6c2954bdacb8129ac00edfd084b98daf226518e3 /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/drawable-xxhdpi/ic_launcher.png
 1375863204000 12356 75154d4f6e93c8832a74d3c27c8cf0d44672ea3e /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/drawable-xhdpi/ic_launcher.png
-1375870231000 998 ad5522e7f963c02a71a56c4884f367b27681ff22 /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/layout/activity_main.xml
+1375954260000 1282 e6253e32fef2e186b633dc4a4caedb9cefd2f430 /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/layout/activity_main.xml
+1375863204000 788 566094e9b20021f28cabbad3e0bb23021188d6b6 /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/values/values.xml
+1375863204000 3760 9d45e7de00dac30e9738dc369dece2835bf9677e /Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/all/debug/drawable-mdpi/ic_launcher.png
