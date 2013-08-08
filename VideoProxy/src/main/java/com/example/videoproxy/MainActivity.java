@@ -1,5 +1,6 @@
 package com.example.videoproxy;
 
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
@@ -7,6 +8,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.webkit.*;
 import android.widget.VideoView;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class MainActivity extends Activity {
 
@@ -18,29 +21,10 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 
-        final WebView webView = (WebView) findViewById(R.id.webView);
-        final VideoView videoView = (VideoView) findViewById(R.id.videoView);
-        MediaJsProxy videoJsProxy = new MediaJsProxy(videoView, webView);
+        WebView webView = (WebView) findViewById(R.id.webView);
+        VideoView videoView = (VideoView) findViewById(R.id.videoView);
 
-        this.initWebView(webView);
-        this.initVideoView(videoView, videoJsProxy);
-
-        webView.addJavascriptInterface(videoJsProxy, _Constant.GLOBAL_JS_OBJ);
-        webView.loadUrl("file:///android_asset/video-test/index.html");
-
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    private void initWebView(WebView webView){
         webView.getSettings().setJavaScriptEnabled(true);
-
         webView.setWebChromeClient(new WebChromeClient(){
             @Override
             public boolean onConsoleMessage(ConsoleMessage cm) {
@@ -49,61 +33,13 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
-
         webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("file:///android_asset/video-test/index.html");
+
+        // this is the only code to startup the MediaJsProxy
+        new MediaJsProxy(videoView, webView);
     }
-
-    private void initVideoView(VideoView videoView, MediaJsProxy videoJsProxy){
-        videoView.setOnCompletionListener(videoJsProxy);
-        videoView.setOnPreparedListener(videoJsProxy);
-//        String uriPath = "file:///android_asset/video-test/trailer.mp4";
-        String uriPath = "http://media.w3.org/2010/05/sintel/trailer.mp4";
-        Uri uri = Uri.parse(uriPath);
-        videoView.setVideoURI(uri);
-    }
-
-
-
-
-
-
 
 }
-//
-//
-//public class MediaObserver implements Runnable {
-//    private AtomicBoolean stop = new AtomicBoolean(false);
-//
-//    public void stop() {
-//        stop.set(true);
-//    }
-//
-//    @Override
-//    public void run() {
-//        while (!stop.get()) {
-////            progress.setProgress(mediaPlayer.getCurrentPosition());
-//            try {
-//                Thread.sleep(200);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
-//}
-//
-//private MediaObserver observer = null;
-//
-//    public void runMedia() {
-//        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener{
-//            @Override
-//            public void onComplete(MediaPlayer mp) {
-//                observer.stop();
-//                progress.setProgress(mp.getCurrentPosition());
-//            }
-//        });
-//
-//
-//        observer = new MediaObserver();
-//        mediaPlayer.start();
-//        new Thread(observer).start();
-//    }
+
+
