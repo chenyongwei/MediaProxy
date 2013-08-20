@@ -3,7 +3,7 @@ function init() {
     document._video = [];
 
     // events of native video player
-    document._video["setSource"] = function(relativePath) {
+    document._video["setSrc"] = function(relativePath) {
         var a = document.createElement("a");
         a.href = relativePath;
         var absolutePath = a.href;
@@ -24,14 +24,20 @@ function init() {
     document._video["getCurrentTime"] = function() {
         return window.android_native_video.getCurrentTime();
     }
+    document._video["dispose"] = function() {
+        window.android_native_video.dispose();
+    }
     document._video["hide"] = function() {
         window.android_native_video.hide();
     }
     document._video["show"] = function() {
         window.android_native_video.show();
     }
-    document._video["setLayout"] = function(x, y, width, height) {
-        window.android_native_video.setLayout(x, y, width, height);
+    document._video["setLayout"] = function(x, y, width, height, webPageWidth, webPageHeight) {
+        var clientWidth = document.body.clientWidth;
+        var clientHeight = document.body.clientHeight;
+        console.log("client height: " + clientHeight + ", client width: " + clientWidth);
+        window.android_native_video.setLayout(x, y, width, height, clientWidth, clientHeight);
     }
 
     // callback from native video player
@@ -60,6 +66,7 @@ function init() {
         currentTime += backwardTime;
         window.android_native_video.setCurrentTime(currentTime);
     };
+
 
 
 }

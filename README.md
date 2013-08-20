@@ -1,4 +1,4 @@
-VideoProxy
+MediaProxy
 ==========
 
-A proxy between html and Android MediaPlayer
+A proxy between html and Android Native Video and Audio player

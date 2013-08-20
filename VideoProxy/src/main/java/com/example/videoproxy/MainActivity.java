@@ -1,16 +1,12 @@
 package com.example.videoproxy;
 
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
-import android.view.Menu;
 import android.webkit.*;
-import android.widget.VideoView;
 
-import java.io.File;
-import java.util.concurrent.atomic.AtomicBoolean;
+import static com.example.videoproxy._Enum.MediaType;
+
 
 public class MainActivity extends Activity {
 
@@ -23,7 +19,6 @@ public class MainActivity extends Activity {
 
 
         WebView webView = (WebView) findViewById(R.id.webView);
-        VideoView videoView = (VideoView) findViewById(R.id.videoView);
 
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebChromeClient(new WebChromeClient(){
@@ -40,9 +35,9 @@ public class MainActivity extends Activity {
 //        String appPath = filesDir.getPath();
 //        Log.d("application path", appPath);
         webView.loadUrl("file:///android_asset/video-test/index.html");
-//        webView.loadUrl("file:///data/data/com.example.videoproxy/files/video-test/index.html");
-        // this is the only code to startup the MediaJsProxy
-        new MediaJsProxy(videoView, webView);
+
+        new MediaProxy(webView, MediaType.video);
+        new MediaProxy(webView, MediaType.audio);
     }
 
 }

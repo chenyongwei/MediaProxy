@@ -104,31 +104,6 @@
                     <!-- API 14 theme customizations can go here. -->
                 </style>
             </file>
-            <file
-                name="index"
-                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/res/raw/index.html"
-                qualifiers=""
-                type="raw" />
-            <file
-                name="style"
-                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/res/raw/style.css"
-                qualifiers=""
-                type="raw" />
-            <file
-                name="poster"
-                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/res/raw/poster.png"
-                qualifiers=""
-                type="raw" />
-            <file
-                name="script"
-                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/res/raw/script.js"
-                qualifiers=""
-                type="raw" />
-            <file
-                name="trailer"
-                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/res/raw/trailer.mp4"
-                qualifiers=""
-                type="raw" />
         </source>
         <source path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/build/res/rs/debug" />
     </dataSet>

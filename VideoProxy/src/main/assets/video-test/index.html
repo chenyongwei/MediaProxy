@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="use-native-mediaplayer">
 <head>
-  <meta charset='utf-8'>
-  <title>HTML5 Video</title>
-  <!--<script src="script.js">-->
-  <script src="video-proxy.js">
-  </script>
-  <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset='utf-8'>
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=1000" />
+    <title>HTML5 Video</title>
+    <script type="text/javascript" src="watch.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+        function getAbsolutePath(relativePath) {
+            var a = document.createElement("a");
+            a.href = relativePath;
+            return a.href;
+        }
+    </script>
 </head>
 <body>
-  <h1>VideoProxy API</h1>
+  <h1>MediaProxy API</h1>
 
   <div>
-    <div id='buttons'>
-      <button onclick="document._video.setSource('http://mobiledev.englishtown.com/offline-package/res/1/mediares/juno/school/videos/testvideo.mp4')">setSource('filePath')</button>
+    <div id='video'>
+       --------------------- Video -------------------<br />
+      <button onclick="document._video.setSrc('http://mobiledev.englishtown.com/offline-package/res/1/mediares/juno/school/videos/testvideo.mp4')">setSrc('filePath')</button>
       <button onclick="document._video.play()">play()</button>
       <button onclick="document._video.pause()">pause()</button>
-        <button onclick="document._video.stop()">stop()</button>
-      <button onclick="document._video.forwardCurrentTime(5)">forwardCurrentTime(5)</button>
-      <button onclick="document._video.backwardCurrentTime(5)">backwardCurrentTime(5)</button>
-      <button onclick="document._video.setCurrentTime(5)">setCurrentTime(5)</button><br>
-       <button onclick="document._video.setLayout(100, 300, 600, 300)">setLayout(100, 300, 600, 300)</button><br>
+      <button onclick="document._video.stop()">stop()</button>
+      <button onclick="document._video.setCurrentTime(5)">setCurrentTime(5)</button>
+      <button onclick="document._video.dispose()">dispose()</button>
+      <button onclick="document._video.setVideoLayout(100, 50, 600, 300)">setVideoLayout(100, 300, 600, 300)</button>
+      <button onclick="document._video.setVideoLayout(100, 100, 300, 150)">setVideoLayout(100, 200, 300, 150)</button>
+      <button onclick="document._video.translateVideoX(300)">translateVideoX(300)</button>
+    </div>
+    <br /><br /><br />
+    <div id='audio'>
+      --------------------- Audio -------------------<br />
+      <button onclick="document._audio.setSrc('http://mobiledev.englishtown.com/juno/school/audios/8.1.1_lo3.5x_safe-exhil.mp3')">setSrc('filePath')</button> <!--http://mobiledev.englishtown.com/juno/school/audios/8.1.1.5.1.compiled.mp3-->
+      <button onclick="document._audio.play()">play()</button>
+      <button onclick="document._audio.pause()">pause()</button>
+      <button onclick="document._audio.stop()">stop()</button>
+      <button onclick="document._audio.setCurrentTime(5)">setCurrentTime(5)</button>
+      <button onclick="document._audio.dispose()">dispose()</button>
     </div>
   </div>
-
 </body>
 
 </html>

@@ -4,23 +4,26 @@
     <dataSet config="main" >
         <source path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets" >
             <file
-                name="video-test/trailer.mp4"
-                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets/video-test/trailer.mp4" />
-            <file
                 name="video-test/index.html"
                 path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets/video-test/index.html" />
             <file
                 name="video-test/poster.png"
                 path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets/video-test/poster.png" />
             <file
-                name="video-test/style.css"
-                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets/video-test/style.css" />
-            <file
                 name="video-test/script.js"
                 path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets/video-test/script.js" />
             <file
+                name="video-test/style.css"
+                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets/video-test/style.css" />
+            <file
+                name="video-test/trailer.mp4"
+                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets/video-test/trailer.mp4" />
+            <file
                 name="video-test/video-proxy.js"
                 path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets/video-test/video-proxy.js" />
+            <file
+                name="video-test/watch.js"
+                path="/Users/Yongwei/Dropbox/Code/EFStash/VideoProxy/VideoProxy/src/main/assets/video-test/watch.js" />
         </source>
     </dataSet>
     <dataSet config="debug" >

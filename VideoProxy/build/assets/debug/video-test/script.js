@@ -1,247 +1,267 @@
-var media_events = new Array();
-
-// was extracted from the spec in January 2013
-media_events["loadstart"] = 0;
-media_events["progress"] = 0;
-media_events["suspend"] = 0;
-media_events["abort"] = 0;
-media_events["error"] = 0;
-media_events["emptied"] = 0;
-media_events["stalled"] = 0;
-media_events["loadedmetadata"] = 0;
-media_events["loadeddata"] = 0;
-media_events["canplay"] = 0;
-media_events["canplaythrough"] = 0;
-media_events["playing"] = 0;
-media_events["waiting"] = 0;
-media_events["seeking"] = 0;
-media_events["seeked"] = 0;
-media_events["ended"] = 0;
-media_events["durationchange"] = 0;
-media_events["timeupdate"] = 0;
-media_events["play"] = 0;
-media_events["pause"] = 0;
-media_events["ratechange"] = 0;
-media_events["volumechange"] = 0;
-
-var media_controller_events = new Array();
-
-// was extracted from the spec in January 2013
-media_controller_events["emptied"] = 0;
-media_controller_events["loadedmetadata"] = 0;
-media_controller_events["loadeddata"] = 0;
-media_controller_events["canplay"] = 0;
-media_controller_events["canplaythrough"] = 0;
-media_controller_events["playing"] = 0;
-media_controller_events["ended"] = 0;
-media_controller_events["waiting"] = 0;
-media_controller_events["ended"] = 0;
-media_controller_events["durationchange"] = 0;
-media_controller_events["timeupdate"] = 0;
-media_controller_events["play"] = 0;
-media_controller_events["pause"] = 0;
-media_controller_events["ratechange"] = 0;
-media_controller_events["volumechange"] = 0;
-
-// was extracted from the spec in January 2013
-var media_properties = [ "error", "src", "currentSrc", "crossOrigin", "networkState", "preload", "buffered", "readyState", "seeking", "currentTime", "duration", "startDate", "paused", "defaultPlaybackRate", "playbackRate", "played", "seekable", "ended", "autoplay", "loop", "mediaGroup", "controller", "controls", "volume", "muted", "defaultMuted", "audioTracks", "videoTracks", "textTracks", "width", "height", "videoWidth", "videoHeight", "poster" ];
-
-var media_properties_elts = null;
-
-var webm = null;
-
+// implemented based on http://www.w3schools.com/tags/ref_av_dom.asp
 function init() {
-    document._video = document.getElementById("video");
+	var detectionCss = "use-native-mediaplayer";
+	var htmlClassName = document.getElementsByTagName("html")[0].className;
+	var enableNativeMediaPlayer = htmlClassName.indexOf(detectionCss) >= 0;
+	if (!enableNativeMediaPlayer) {
+		return;
+	}
 
-    webm = document.getElementById("webm");
 
-    init_events();
-    init_properties();
-    init_mediatypes();
+	// create fake dom and events to delegate the events between "native media player" and "mediaelement"
+	var video = document.createElement("div");
+	var audio = document.createElement("div");
+	var videoEvent = {};
+	var audioEvent = {};
 
-    // properties are updated even if no event was triggered
-    setInterval(update_properties, 500);
+	window.android_native_video = window.android_native_video || {};
+	window.android_native_audio = window.android_native_audio || {};
+	/** HTML Audio/Video Events mapping **/
+	createVideoEvent("abort", "canPlay", "canplaythrough", "durationchange" , "emptied", "ended", "error", 
+		"loadeddata", "loadedmetadata", "loadstart", "pause", "play", "playing", "progress", "ratechange", 
+		"seeked", "seeking", "stalled", "suspend", "timeupdate", "volumechange", "waiting");
+	createAudioEvent("abort", "canPlay", "canplaythrough", "durationchange" , "emptied", "ended", "error", 
+		"loadeddata", "loadedmetadata", "loadstart", "pause", "play", "playing", "progress", "ratechange", 
+		"seeked", "seeking", "stalled", "suspend", "timeupdate", "volumechange", "waiting");
+
+
+	/** HTML Audio/Video Methods mapping **/
+	// accept the video control command and forward it to native media player
+	video.addTextTrack = function(){ 
+		throw new Error("addTextTrack has not been implemented now");
+	};
+	video.canPlayType = function(){ 
+		throw new Error("canPlayType has not been implemented now");
+	};
+	video.load = function(){ 
+		window.android_native_video.load();
+	};
+	video.play = function(){ 
+		console.log("NativePlayer.play(), the url is :" + video.src);
+		if (window.android_native_video.play) {
+			// call native media play
+			window.android_native_video.play();
+		}
+		else {
+			// simulate the native media play callback
+			window.android_native_video_event.play();
+			// simulate to update the progress
+			window.simulate_event_timeupdate = setInterval(function(){
+				var i = video.currentTime || 0;
+				i += 0.2;
+				window.android_native_video_event.timeupdate(i);
+			}, 200);
+		}
+	};
+	audio.play = function(){
+		if (window.android_native_audio.play) {
+			// call native media play
+			window.android_native_audio.play();
+		}
+		// else {
+		// 	// simulate the native media play callback
+		// 	window.android_native_audio_event.play();
+		// 	// simulate to update the progress
+		// 	window.simulate_event_timeupdate = setInterval(function(){
+		// 		var i = video.currentTime || 0;
+		// 		i += 0.2;
+		// 		window.android_native_video_event.timeupdate(i);
+		// 	}, 200);
+		// }
+	};
+	video.pause = function(){ 
+		if (window.android_native_video.pause) {
+			window.android_native_video.pause();
+		}
+		else {
+			window.android_native_video_event.pause();
+			clearInterval(window.simulate_event_timeupdate);
+		}
+	};
+	video.stop = function(){ 
+		window.android_native_video.stop();
+	};
+	video.dispose = function(){
+		if (window.android_native_video.dispose) {
+			window.android_native_video.dispose();
+		}
+		else {
+			console.log("NativePlayer.dispose()");
+		}	
+	};
+	// this method is only for mediaProxy, not a generic HTML5 audio/video method
+	video.setVideoLayout = function(x, y, width, height){
+		console.log("NativePlayer.setLayout");
+		var clientWidth = document.body.clientWidth;
+        var clientHeight = document.body.clientHeight;
+        console.log("x:" + x + ", y: " + y + ", width: " + width + ", height:" + height + ", client width: " + clientWidth + ", client height: " + clientHeight);
+		window.android_native_video.setVideoLayout && window.android_native_video.setVideoLayout(x, y, width, height, clientWidth, clientHeight);
+	};
+
+ 	video.translateVideoX = function(x) {
+ 		console.log("NativePlayer.translateX");
+ 		var clientWidth = document.body.clientWidth;
+ 		window.android_native_video.translateVideoX && window.android_native_video.translateVideoX(x, clientWidth);	
+ 	}
+
+	/** HTML Audio/Video Properties mapping **/
+	/** these are all of properties for HTML5 Audio/Video tag, we want to manage them from following callbacks
+	audioTracks				Returns an AudioTrackList object representing available audio tracks
+	autoplay				Sets or returns if the audio/video should start playing as soon as it is loaded
+	buffered				Returns a TimeRanges object representing the buffered parts of the audio/video
+	controller				Returns the MediaController object representing the current media controller of the audio/video
+	controls				Sets or returns if the audio/video should display controls (like play/pause etc.)
+	crossOrigin				Sets or returns the CORS settings of the audio/video
+	currentSrc				Returns the URL of the current audio/video
+	currentTime				Sets or returns the current playback position in the audio/video (in seconds)
+	defaultMuted			Sets or returns if the audio/video is muted by default
+	defaultPlaybackRate		Sets or returns the default speed of the audio/video playback
+	duration				Returns the length of the current audio/video (in seconds)
+	ended					Returns if the playback of the audio/video has ended or not
+	error					Returns a MediaError object representing the error state of the audio/video
+	loop					Sets or returns if the audio/video should start over again when finished
+	mediaGroup				Sets or returns a the group the audio/video belongs to (used to link multiple audio/video elements)
+	muted					Sets or returns if the audio/video is muted or not
+	networkState			Returns the current network state of the audio/video
+	paused					Sets or returns if the audio/video is paused or not
+	playbackRate			Sets or returns the speed of the audio/video playback
+	played					Returns a TimeRanges object representing the played parts of the audio/video
+	preload					Sets or returns if the audio/video should be loaded when the page loads
+	readyState				Returns the current ready state of the audio/video
+	seekable				Returns a TimeRanges object representing the seekable parts of the audio/video
+	seeking					Returns if the user is currently seeking in the audio/video
+	src						Sets or returns the current source of the audio/video element
+	startDate				Returns a Date object representing the current time offset
+	textTracks				Returns a TextTrackList object representing the available text tracks
+	videoTracks				Returns a VideoTrackList object representing the available video tracks
+	volume					Sets or returns the volume of the audio/video
+	**/
+	
+	// init default values for some properties
+	video.paused = true;
+	video.played = false;
+	video.buffered = false;
+	video.ended = false;
+	
+	// watch property changes and notify to android native code
+	// depend on Watch.JS https://github.com/melanke/Watch.JS
+	watch(video, "src", function(){
+		try{
+			console.log("NativePlayer.setSrc(" + video.src + ")");
+			video.setSrc(video.src);
+		}
+		catch (e){
+			console.log(e.message);
+		}
+	});
+	video.setSrc = function(src) {
+		if (window.android_native_video.setSrc) {
+			console.log("window.android_native_video.setSrc");
+			window.android_native_video.setSrc(src);
+		}
+		else {
+			// simulate the events
+			window.android_native_video_event.loadedmetadata(30);
+			window.android_native_video_event.durationchange(30);
+		}
+	}
+	audio.setSrc = function(src) {
+		if (window.android_native_audio.setSrc) {
+			window.android_native_audio.setSrc(src);	
+		}
+		// else {
+		// 	// simulate the events
+		// 	window.android_native_video_event.loadedmetadata(30);
+		// 	window.android_native_video_event.durationchange(30);
+		// }
+	}
+
+	var currentTimeChangedFromPlayer = false;
+	watch(video, "currentTime", function(){
+		console.log("NativePlayer.currentTime = " + video.currentTime);
+		if (!currentTimeChangedFromPlayer) {
+			video.setCurrentTime(video.currentTime);		
+		}
+		currentTimeChangedFromPlayer = false;
+	});
+	video.setCurrentTime = function(currentTime) {
+		console.log("NativePlayer.currentTime = " + currentTime);
+		if (window.android_native_video.setCurrentTime) {
+			window.android_native_video.setCurrentTime(currentTime);
+		}
+		else {
+			currentTimeChangedFromPlayer = true;
+			video.currentTime = currentTime;
+			window.android_native_video_event.seeked();
+		}
+	}
+
+	// register an android native object shadow to javascript, it should be overrided later from android native code.
+	window.android_native_video_event = window.android_native_video_event || {};
+	// accept the callback from native media player and update the fake video dom element to right state
+	window.android_native_video_event.loadedmetadata = function(duration) {
+		console.log("NativePlayer send loadedmetadata event, duration is : "+ duration);
+		video.duration = duration;
+		video.buffered = true;
+	    video.dispatchEvent(videoEvent.loadedmetadata);
+	};
+	window.android_native_video_event.durationchange = function(duration) {
+		console.log("NativePlayer send durationchange event, duration is :" + duration);
+		//currentTimeChangedFromPlayer = true;
+		video.duration = duration;
+	    video.dispatchEvent(videoEvent.durationchange);
+	};
+	window.android_native_video_event.timeupdate = function(currentTime) {
+		console.log("NativePlayer send timeupdate event, currentTime is : "+ currentTime);
+		currentTimeChangedFromPlayer = true;
+		video.currentTime = currentTime;
+		video.dispatchEvent(videoEvent.timeupdate);
+	};
+	window.android_native_video_event.play = function() {
+		video.paused = false;
+		console.log("NativePlayer send play event");
+		video.dispatchEvent(videoEvent.play);
+	};
+	window.android_native_video_event.playing = function() {
+		console.log("NativePlayer send playing event");
+		video.paused = false;
+		video.dispatchEvent(videoEvent.playing);
+	};
+	window.android_native_video_event.pause = function() {
+		console.log("NativePlayer send pause event");
+		video.paused = true;
+		video.dispatchEvent(videoEvent.pause);
+	};
+	window.android_native_video_event.ended = function() {
+		console.log("NativePlayer send ended event");
+	    video.ended = true;
+	    video.dispatchEvent(videoEvent.ended);
+	};
+	window.android_native_video_event.seeked = function() {
+		console.log("NativePlayer send seeked event");
+		video.dispatchEvent(videoEvent.seeked);
+	};
+
+	function createVideoEvent(event1name, event2name /*event3name, .....*/) {
+		for (var argIndex in arguments) {
+			var eventname = arguments[argIndex];
+			videoEvent[eventname] = document.createEvent("Event");
+			videoEvent[eventname].initEvent(eventname, false, true);
+		}
+	};
+	function createAudioEvent(event1name, event2name /*event3name, .....*/) {
+		for (var argIndex in arguments) {
+			var eventname = arguments[argIndex];
+			audioEvent[eventname] = document.createEvent("Event");
+			audioEvent[eventname].initEvent(eventname, false, true);
+		}
+	};
+
+	// cache to global objects
+	document._video = video;
+	document._audio = audio;
+	document._videoEvent = videoEvent;
+	document._audioEvent = audioEvent;
+
 }
 document.addEventListener("DOMContentLoaded", init, false);
-
-function init_events() {
-
-    for (key in media_events) {	
-	document._video.addEventListener(key, capture, false);
-    }
-
-    var tbody = document.getElementById("events");
-    var i = 1;
-    var tr = null;
-    for (key in media_events) {	
-	if (tr == null) tr    = document.createElement("tr");
-	var th = document.createElement("th");
-	th.textContent = key;
-	var td = document.createElement("td");
-	td.setAttribute("id", "e_" + key);
-	td.innerHTML = "0";
-	td.className = "false";
-	tr.appendChild(th);
-	tr.appendChild(td);
-
-	if ((i++ % 5) == 0) {
-	    tbody.appendChild(tr);
-	    tr = null;
-	}
-
-
-    }
-    if (tr != null) tbody.appendChild(tr);
-}
-function init_properties() {
-    var tbody = document.getElementById("properties");
-    var i = 0;
-    var tr = null;
-    media_properties_elts = new Array(media_properties.length);
-    do {
-	if (tr == null) tr    = document.createElement("tr");
-	var th = document.createElement("th");
-	th.textContent = media_properties[i];
-	var td = document.createElement("td");
-	td.setAttribute("id", "p_" + media_properties[i]);
-	var r = eval("document._video." + media_properties[i]);
-	td.innerHTML = r;
-	if (typeof(r) != "undefined") {
-	    td.className = "true";
-	} else {
-	    td.className = "false";
-	}
-	tr.appendChild(th);
-	tr.appendChild(td);
-	media_properties_elts[i] = td;
-	if ((++i % 3) == 0) {
-	    tbody.appendChild(tr);
-	    tr = null;
-	}
-    } while (i < media_properties.length);
-    if (tr != null) tbody.appendChild(tr);
-}
-
-function init_mediatypes() {
-    var tbody = document.getElementById("m_video");
-    var i = 0;
-    var tr = document.createElement("tr");
-    var videoTypes = [ "video/ogg", "video/mp4", "video/webm" ];
-    i = 0;
-    tr = document.createElement("tr");    
-    do {
-	var td = document.createElement("th");
-	td.innerHTML = videoTypes[i];
-	tr.appendChild(td);
-    } while (++i < videoTypes.length);
-    tbody.appendChild(tr);
-
-    i = 0;
-    tr = document.createElement("tr");
-
-    if (!!document._video.canPlayType) {
-      do {
-	var td = document.createElement("td");
-	var support = document._video.canPlayType(videoTypes[i]);	
-	td.innerHTML = '"' + support + '"';
-	if (support === "maybe") {
-	    td.className = "true";
-	} else if (support === "") {
-	    td.className = "false";
-	}
-	tr.appendChild(td);
-      } while (++i < videoTypes.length);
-      tbody.appendChild(tr);
-    }
-
-}
-
-
-function capture(event) {
-    media_events[event.type] = media_events[event.type] + 1;
-    for (key in media_events) {	
-	var e = document.getElementById("e_" + key);
-	if (e) {
-	    e.innerHTML = media_events[key];
-	    if (media_events[key] > 0) e.className = "true";
-	}
-    }
-    update_properties();
-}
-
-function update_properties() {
-    var i = 0;
-    for (key in media_properties) {
-	var val = eval("document._video." + media_properties[key]);
-	/*
-	if (typeof val === "TimesRanges") {
-	    val = val.length + " TimeRanges";
-	}
-	*/
-	media_properties_elts[i++].innerHTML = val;
-    }
-    if (!!document._video.audioTracks) {
-	var td = document.getElementById("m_audiotracks");
-	td.innerHTML = document._video.audioTracks.length;
-	td.className = "true";
-    }
-    if (!!document._video.videoTracks) {
-	var td = document.getElementById("m_videotracks");
-	td.innerHTML = document._video.videoTracks.length;
-	td.className = "true";
-    }
-    if (!!document._video.textTracks) {
-	var td = document.getElementById("m_texttracks");
-	td.innerHTML = document._video.textTracks.length;
-	td.className = "true";
-    }
-}
-
-var videos = new Array();
-
-videos[0] = [
-	     "http://media.w3.org/2010/05/sintel/poster.png",
-	     "http://media.w3.org/2010/05/sintel/trailer.mp4",
-	     "http://media.w3.org/2010/05/sintel/trailer.ogv",
-	     "http://media.w3.org/2010/05/sintel/trailer.webm"
-	     ];
-videos[1] = [
-	     "http://media.w3.org/2010/05/bunny/poster.png",
-	     "http://media.w3.org/2010/05/bunny/trailer.mp4",
-	     "http://media.w3.org/2010/05/bunny/trailer.ogv"
-	     ];
-videos[2] = [
-	     "http://media.w3.org/2010/05/bunny/poster.png",
-	     "http://media.w3.org/2010/05/bunny/movie.mp4",
-	     "http://media.w3.org/2010/05/bunny/movie.ogv"
-	     ];
-videos[3] = [
-	     "http://media.w3.org/2010/05/video/poster.png",
-	     "http://media.w3.org/2010/05/video/movie_300.mp4",
-	     "http://media.w3.org/2010/05/video/movie_300.ogv",
-	     "http://media.w3.org/2010/05/video/movie_300.webm"
-	     ];
-
-function switchVideo(n) {
-    if (n >= videos.length) n = 0;
-
-    var mp4 = document.getElementById("mp4");
-    var ogv = document.getElementById("ogv");
-    var parent = ogv.parentNode;
-
-    document._video.setAttribute("poster", videos[n][0]);
-    mp4.setAttribute("src", videos[n][1]);
-    ogv.setAttribute("src", videos[n][2]);
-
-    if (videos[n][3]) {
-	if (webm.parentNode == null) {
-	    parent.insertBefore(webm, ogv);
-	}
-	webm.setAttribute("src", videos[n][3]);
-    } else {
-	if (webm.parentNode != null) {
-	    parent.removeChild(webm);
-	}
-    }
-    document._video.load();
-}
