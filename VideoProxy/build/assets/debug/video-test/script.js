@@ -30,11 +30,20 @@ function init() {
 	video.addTextTrack = function(){ 
 		throw new Error("addTextTrack has not been implemented now");
 	};
+	audio.addTextTrack = function(){ 
+		throw new Error("addTextTrack has not been implemented now");
+	};
 	video.canPlayType = function(){ 
+		throw new Error("canPlayType has not been implemented now");
+	};
+	audio.canPlayType = function(){ 
 		throw new Error("canPlayType has not been implemented now");
 	};
 	video.load = function(){ 
 		window.android_native_video.load();
+	};
+	audio.load = function(){ 
+		window.android_native_audio.load();
 	};
 	video.play = function(){ 
 		console.log("NativePlayer.play(), the url is :" + video.src);
@@ -46,28 +55,29 @@ function init() {
 			// simulate the native media play callback
 			window.android_native_video_event.play();
 			// simulate to update the progress
-			window.simulate_event_timeupdate = setInterval(function(){
+			window.simulate_videoevent_timeupdate = setInterval(function(){
 				var i = video.currentTime || 0;
 				i += 0.2;
 				window.android_native_video_event.timeupdate(i);
 			}, 200);
 		}
 	};
-	audio.play = function(){
+	audio.play = function(){ 
+		console.log("NativePlayer.play(), the url is :" + audio.src);
 		if (window.android_native_audio.play) {
 			// call native media play
 			window.android_native_audio.play();
 		}
-		// else {
-		// 	// simulate the native media play callback
-		// 	window.android_native_audio_event.play();
-		// 	// simulate to update the progress
-		// 	window.simulate_event_timeupdate = setInterval(function(){
-		// 		var i = video.currentTime || 0;
-		// 		i += 0.2;
-		// 		window.android_native_video_event.timeupdate(i);
-		// 	}, 200);
-		// }
+		else {
+			// simulate the native media play callback
+			window.android_native_audio_event.play();
+			// simulate to update the progress
+			window.simulate_audioevent_timeupdate = setInterval(function(){
+				var i = audio.currentTime || 0;
+				i += 0.2;
+				window.android_native_audio_event.timeupdate(i);
+			}, 200);
+		}
 	};
 	video.pause = function(){ 
 		if (window.android_native_video.pause) {
@@ -75,15 +85,35 @@ function init() {
 		}
 		else {
 			window.android_native_video_event.pause();
-			clearInterval(window.simulate_event_timeupdate);
+			clearInterval(window.simulate_videoevent_timeupdate);
+		}
+	};
+	audio.pause = function(){ 
+		if (window.android_native_audio.pause) {
+			window.android_native_audio.pause();
+		}
+		else {
+			window.android_native_audio_event.pause();
+			clearInterval(window.simulate_audioevent_timeupdate);
 		}
 	};
 	video.stop = function(){ 
 		window.android_native_video.stop();
 	};
+	audio.stop = function(){ 
+		window.android_native_audio.stop();
+	};
 	video.dispose = function(){
 		if (window.android_native_video.dispose) {
 			window.android_native_video.dispose();
+		}
+		else {
+			console.log("NativePlayer.dispose()");
+		}	
+	};
+	audio.dispose = function(){
+		if (window.android_native_audio.dispose) {
+			window.android_native_audio.dispose();
 		}
 		else {
 			console.log("NativePlayer.dispose()");
@@ -97,7 +127,6 @@ function init() {
         console.log("x:" + x + ", y: " + y + ", width: " + width + ", height:" + height + ", client width: " + clientWidth + ", client height: " + clientHeight);
 		window.android_native_video.setVideoLayout && window.android_native_video.setVideoLayout(x, y, width, height, clientWidth, clientHeight);
 	};
-
  	video.translateVideoX = function(x) {
  		console.log("NativePlayer.translateX");
  		var clientWidth = document.body.clientWidth;
@@ -142,6 +171,10 @@ function init() {
 	video.played = false;
 	video.buffered = false;
 	video.ended = false;
+	audio.paused = true;
+	audio.played = false;
+	audio.buffered = false;
+	audio.ended = false;
 	
 	// watch property changes and notify to android native code
 	// depend on Watch.JS https://github.com/melanke/Watch.JS
@@ -149,6 +182,15 @@ function init() {
 		try{
 			console.log("NativePlayer.setSrc(" + video.src + ")");
 			video.setSrc(video.src);
+		}
+		catch (e){
+			console.log(e.message);
+		}
+	});
+	watch(audio, "src", function(){
+		try{
+			console.log("NativePlayer.setSrc(" + audio.src + ")");
+			audio.setSrc(audio.src);
 		}
 		catch (e){
 			console.log(e.message);
@@ -176,13 +218,21 @@ function init() {
 		// }
 	}
 
-	var currentTimeChangedFromPlayer = false;
+	var currentTimeChangedFromVideoPlayer = false;
 	watch(video, "currentTime", function(){
 		console.log("NativePlayer.currentTime = " + video.currentTime);
-		if (!currentTimeChangedFromPlayer) {
+		if (!currentTimeChangedFromVideoPlayer) {
 			video.setCurrentTime(video.currentTime);		
 		}
-		currentTimeChangedFromPlayer = false;
+		currentTimeChangedFromVideoPlayer = false;
+	});
+	var currentTimeChangedFromAudioPlayer = false;
+	watch(audio, "currentTime", function(){
+		console.log("NativePlayer.currentTime = " + audio.currentTime);
+		if (!currentTimeChangedFromAudioPlayer) {
+			audio.setCurrentTime(audio.currentTime);		
+		}
+		currentTimeChangedFromAudioPlayer = false;
 	});
 	video.setCurrentTime = function(currentTime) {
 		console.log("NativePlayer.currentTime = " + currentTime);
@@ -190,14 +240,26 @@ function init() {
 			window.android_native_video.setCurrentTime(currentTime);
 		}
 		else {
-			currentTimeChangedFromPlayer = true;
+			currentTimeChangedFromVideoPlayer = true;
 			video.currentTime = currentTime;
 			window.android_native_video_event.seeked();
+		}
+	}
+	audio.setCurrentTime = function(currentTime) {
+		console.log("NativePlayer.currentTime = " + currentTime);
+		if (window.android_native_audio.setCurrentTime) {
+			window.android_native_audio.setCurrentTime(currentTime);
+		}
+		else {
+			currentTimeChangedFromAudioPlayer = true;
+			audio.currentTime = currentTime;
+			window.android_native_audio_event.seeked();
 		}
 	}
 
 	// register an android native object shadow to javascript, it should be overrided later from android native code.
 	window.android_native_video_event = window.android_native_video_event || {};
+	window.android_native_audio_event = window.android_native_audio_event || {};
 	// accept the callback from native media player and update the fake video dom element to right state
 	window.android_native_video_event.loadedmetadata = function(duration) {
 		console.log("NativePlayer send loadedmetadata event, duration is : "+ duration);
@@ -205,41 +267,83 @@ function init() {
 		video.buffered = true;
 	    video.dispatchEvent(videoEvent.loadedmetadata);
 	};
+	window.android_native_audio_event.loadedmetadata = function(duration) {
+		console.log("NativePlayer send loadedmetadata event, duration is : "+ duration);
+		audio.duration = duration;
+		audio.buffered = true;
+	    audio.dispatchEvent(audioEvent.loadedmetadata);
+	};
 	window.android_native_video_event.durationchange = function(duration) {
 		console.log("NativePlayer send durationchange event, duration is :" + duration);
-		//currentTimeChangedFromPlayer = true;
+		//currentTimeChangedFromVideoPlayer = true;
 		video.duration = duration;
 	    video.dispatchEvent(videoEvent.durationchange);
 	};
+	window.android_native_audio_event.durationchange = function(duration) {
+		console.log("NativePlayer send durationchange event, duration is :" + duration);
+		//currentTimeChangedFromVideoPlayer = true;
+		audio.duration = duration;
+	    audio.dispatchEvent(audioEvent.durationchange);
+	};
 	window.android_native_video_event.timeupdate = function(currentTime) {
 		console.log("NativePlayer send timeupdate event, currentTime is : "+ currentTime);
-		currentTimeChangedFromPlayer = true;
+		currentTimeChangedFromVideoPlayer = true;
 		video.currentTime = currentTime;
 		video.dispatchEvent(videoEvent.timeupdate);
+	};
+	window.android_native_audio_event.timeupdate = function(currentTime) {
+		console.log("NativePlayer send timeupdate event, currentTime is : "+ currentTime);
+		currentTimeChangedFromAudioPlayer = true;
+		audio.currentTime = currentTime;
+		audio.dispatchEvent(audioEvent.timeupdate);
 	};
 	window.android_native_video_event.play = function() {
 		video.paused = false;
 		console.log("NativePlayer send play event");
 		video.dispatchEvent(videoEvent.play);
 	};
+	window.android_native_audio_event.play = function() {
+		audio.paused = false;
+		console.log("NativePlayer send play event");
+		audio.dispatchEvent(audioEvent.play);
+	};
 	window.android_native_video_event.playing = function() {
 		console.log("NativePlayer send playing event");
 		video.paused = false;
 		video.dispatchEvent(videoEvent.playing);
+	};
+	window.android_native_audio_event.playing = function() {
+		console.log("NativePlayer send playing event");
+		audio.paused = false;
+		audio.dispatchEvent(audioEvent.playing);
 	};
 	window.android_native_video_event.pause = function() {
 		console.log("NativePlayer send pause event");
 		video.paused = true;
 		video.dispatchEvent(videoEvent.pause);
 	};
+	window.android_native_audio_event.pause = function() {
+		console.log("NativePlayer send pause event");
+		audio.paused = true;
+		audio.dispatchEvent(audioEvent.pause);
+	};
 	window.android_native_video_event.ended = function() {
 		console.log("NativePlayer send ended event");
 	    video.ended = true;
 	    video.dispatchEvent(videoEvent.ended);
 	};
+	window.android_native_audio_event.ended = function() {
+		console.log("NativePlayer send ended event");
+	    audio.ended = true;
+	    audio.dispatchEvent(audioEvent.ended);
+	};
 	window.android_native_video_event.seeked = function() {
 		console.log("NativePlayer send seeked event");
 		video.dispatchEvent(videoEvent.seeked);
+	};
+	window.android_native_audio_event.seeked = function() {
+		console.log("NativePlayer send seeked event");
+		audio.dispatchEvent(audioEvent.seeked);
 	};
 
 	function createVideoEvent(event1name, event2name /*event3name, .....*/) {

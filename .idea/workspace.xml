@@ -23,9 +23,6 @@
       </layout>
     </layouts>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MediaPlayer" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" name="Default" comment="" />
     <ignored path="VideoProxy.iws" />
@@ -33,18 +30,18 @@
     <file path="/activity_main.xml" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376618413908" ignored="false" />
     <file path="/MainActivity.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376984439686" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376055675334" ignored="false" />
-    <file path="/*.regexp" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376276692143" ignored="false" />
-    <file path="/Dummy.txt" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375870250272" ignored="false" />
+    <file path="/*.regexp" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377064996648" ignored="false" />
+    <file path="/Dummy.txt" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067303581" ignored="false" />
     <file path="/fragment.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376985380090" ignored="false" />
     <file path="/index.html" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376978999677" ignored="false" />
     <file path="/VideoJsInterface.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375873458465" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/gen/com/ef/efekta/englishtown/R.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376055335990" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/gen/com/ef/efekta/englishtown/Manifest.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376055335990" ignored="false" />
     <file path="/video-proxy.js" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376621763340" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/gen/com/ef/efekta/englishtown/BuildConfig.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376055433562" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/gen/com/ef/efekta/englishtown/BuildConfig.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
     <file path="/VideoJsProxy.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375883864113" ignored="false" />
     <file path="/MediaPlayerExt.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1375929646942" ignored="false" />
-    <file path="/_Constant.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376983072322" ignored="false" />
+    <file path="/_Constant.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377063861167" ignored="false" />
     <file path="/MediaJsProxy.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376884179984" ignored="false" />
     <file path="$PROJECT_DIR$/VideoProxy/build/source/r/debug/com/example/videoproxy/R.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376993433965" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/src/com/ef/efekta/StepActivity.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970208319" ignored="false" />
@@ -55,40 +52,40 @@
     <file path="/MediaJavascriptProxy.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376621289739" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/res/layout/activity.xml" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376547308511" ignored="false" />
     <file path="/activity.xml" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376547308511" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/BookPLFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/DashboardActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LessonTileView_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LoginActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LevelFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/NewUnitFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/DashboardCenterFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/StepActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/SettingsFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LevelNavigationFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/DashboardGLPLTile_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/AppAboutFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/nativeactivities/RolePlayFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/StepSummaryFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/ActivityInstructionsFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/AppResetFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/AppMustUpdateActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/GLPLActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/ActivityBottomBarFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LanguageSettingsFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/BookPLFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/DashboardActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LessonTileView_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LoginActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LevelFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/NewUnitFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/DashboardCenterFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/StepActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/SettingsFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LevelNavigationFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/DashboardGLPLTile_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/AppAboutFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/nativeactivities/RolePlayFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/StepSummaryFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/ActivityInstructionsFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/AppResetFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/AppMustUpdateActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/GLPLActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/ActivityBottomBarFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/LanguageSettingsFragment_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067353108" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/src/com/ef/efekta/util/RemotePathResolver.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376276648310" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/src/com/ef/efekta/LoginActivity.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376276702200" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/bin/out/com/ef/efekta/MediaJavascriptProxy.class" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376621564624" ignored="false" />
     <file path="/MediaAction.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376883012286" ignored="false" />
-    <file path="/VideoHandler.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376992904296" ignored="false" />
-    <file path="/AudioHandler.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376993598401" ignored="false" />
+    <file path="/VideoHandler.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377066221084" ignored="false" />
+    <file path="/AudioHandler.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377066786517" ignored="false" />
     <file path="/MediaProxyHandler.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376884676293" ignored="false" />
-    <file path="/MediaHandler.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376993134848" ignored="false" />
-    <file path="/MediaProxy.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376987785482" ignored="false" />
+    <file path="/MediaHandler.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377066830759" ignored="false" />
+    <file path="/MediaProxy.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377064089057" ignored="false" />
     <file path="/_Enum.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376983750143" ignored="false" />
     <file path="/IMediaEventCallback.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376983468473" ignored="false" />
-    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/src/com/ef/efekta/EfektaConfig.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970318563" ignored="false" />
+    <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/src/com/ef/efekta/EfektaConfig.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067324486" ignored="false" />
     <file path="$PROJECT_DIR$/../efekta12-android/Efekta 12/aa-gen/com/ef/efekta/NativeActivity_.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970807696" ignored="false" />
-    <file path="/EfektaConfig.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376970317613" ignored="false" />
+    <file path="/EfektaConfig.java" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1377067323664" ignored="false" />
     <file path="/README.md" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376978740307" ignored="false" />
     <file path="/script.js" changelist="dbcbf75e-bfcb-458b-b9b8-9f0ddac5a1c7" time="1376980201735" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -142,8 +139,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaHandler.java" line="145" class="com.example.videoproxy.MediaHandler.MediaObserver" package="com.example.videoproxy">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaHandler.java" line="147" class="com.example.videoproxy.MediaHandler.MediaObserver" package="com.example.videoproxy">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -201,9 +198,11 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="30" selection-start="1358" selection-end="1360" vertical-scroll-proportion="0.0">
+            <state line="39" column="49" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#639#949#0" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,7 +211,7 @@
       <file leaf-file-name="_Constant.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Constant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="52" selection-start="430" selection-end="451" vertical-scroll-proportion="0.0">
+            <state line="14" column="38" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -221,18 +220,22 @@
       <file leaf-file-name="MediaProxy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="47" selection-start="879" selection-end="879" vertical-scroll-proportion="-10.48">
+            <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="-1.2">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4955#5138#0" expanded="true" />
+                <element signature="e#5127#5128#0" expanded="true" />
+                <element signature="e#6224#6406#0" expanded="true" />
+                <element signature="e#6395#6396#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioHandler.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AudioHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/AudioHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="47" selection-start="779" selection-end="779" vertical-scroll-proportion="0.5703422">
+            <state line="37" column="5" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -267,25 +270,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="MediaHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="51" selection-start="985" selection-end="985" vertical-scroll-proportion="-9.444445">
+            <state line="133" column="18" selection-start="3588" selection-end="3588" vertical-scroll-proportion="0.5253165">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MediaHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaHandler.java">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="19" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="94" column="14" selection-start="3413" selection-end="3413" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -293,7 +291,7 @@
       <file leaf-file-name="VideoHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/VideoHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="48" selection-start="2001" selection-end="2088" vertical-scroll-proportion="-12.56">
+            <state line="20" column="31" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -319,14 +317,14 @@
         <option value="$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/script.js" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/video-proxy.js" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/IMediaEventCallback.java" />
-        <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Constant.java" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Enum.java" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java" />
+        <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Constant.java" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaProxy.java" />
-        <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/VideoHandler.java" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaHandler.java" />
         <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/AudioHandler.java" />
+        <option value="$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/VideoHandler.java" />
       </list>
     </option>
   </component>
@@ -714,11 +712,12 @@
       <workItem from="1375866905170" duration="16408000" />
       <workItem from="1375884203263" duration="31223000" />
       <workItem from="1376275632904" duration="62478000" />
+      <workItem from="1377052583915" duration="8317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113059000" />
+    <option name="totallyTimeSpent" value="121376000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -744,10 +743,7 @@
     <frame x="0" y="22" width="2560" height="1330" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32719836" sideWeight="0.7698276" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822084" sideWeight="0.7698276" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22479339" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -756,14 +752,17 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3429752" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3247934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32396695" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.6380165" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16388226" sideWeight="0.6752066" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16388226" sideWeight="0.6760331" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31570247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32719836" sideWeight="0.7698276" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822084" sideWeight="0.7698276" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -833,28 +832,17 @@
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/view/SurfaceView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="62" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="62" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="30" selection-start="289" selection-end="289" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="27" selection-start="9011" selection-end="9011" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -868,23 +856,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/Looper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/IMediaEventCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="336" selection-end="345" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="16" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/res/layout/activity_main.xml">
@@ -892,14 +864,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="51" selection-start="985" selection-end="985" vertical-scroll-proportion="-9.444445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="52" selection-start="430" selection-end="451" vertical-scroll-proportion="0.0">
+        <state line="17" column="51" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -911,27 +876,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Enum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="1358" selection-end="1360" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="19" column="25" selection-start="336" selection-end="345" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaProxy.java">
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/_Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="47" selection-start="879" selection-end="879" vertical-scroll-proportion="-10.48">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="14" column="38" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaHandler.java">
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/assets/video-test/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="19" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.0">
+        <state line="94" column="14" selection-start="3413" selection-end="3413" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/AudioHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="5" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -940,19 +908,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/VideoHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="48" selection-start="2001" selection-end="2088" vertical-scroll-proportion="-12.56">
+        <state line="20" column="31" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/AudioHandler.java">
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="47" selection-start="779" selection-end="779" vertical-scroll-proportion="0.5703422">
+        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="-1.2">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4955#5138#0" expanded="true" />
+            <element signature="e#5127#5128#0" expanded="true" />
+            <element signature="e#6224#6406#0" expanded="true" />
+            <element signature="e#6395#6396#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="49" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#639#949#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/IMediaEventCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoProxy/src/main/java/com/example/videoproxy/MediaHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="18" selection-start="3588" selection-end="3588" vertical-scroll-proportion="0.5253165">
+          <folding />
         </state>
       </provider>
     </entry>

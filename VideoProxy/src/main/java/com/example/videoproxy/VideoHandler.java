@@ -1,11 +1,9 @@
 package com.example.videoproxy;
 
-import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Message;
 import android.util.Log;
-import android.view.Surface;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
@@ -82,7 +80,7 @@ public class VideoHandler extends MediaHandler {
 
     @Override
     protected void stop() {
-        this.video.stopPlayback();
+        super.stop();
         this.hideVideo();
     }
 

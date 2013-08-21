@@ -59,11 +59,11 @@ public abstract class MediaHandler extends Handler implements MediaPlayer.OnPrep
 
 
     public float getCurrentTime() {
-        return player.getCurrentPosition() * 1000;
+        return (float)player.getCurrentPosition() / 1000;
     }
 
     public float getDuration() {
-        return ((float)player.getDuration() / 1000);
+        return (float)player.getDuration() / 1000;
     }
 
     protected void play() {
@@ -99,7 +99,9 @@ public abstract class MediaHandler extends Handler implements MediaPlayer.OnPrep
         if (null != observer) {
             observer.stop();
         }
-        // media stop implemented in VideoHandler or AudioHandler
+//        player.stop();
+        player.pause();
+        player.seekTo(0);
     }
 
     protected void dispose() {
@@ -124,7 +126,7 @@ public abstract class MediaHandler extends Handler implements MediaPlayer.OnPrep
     public void onCompletion(MediaPlayer mediaPlayer) {
         observer.stop();
         // update latest progress to web part
-        callback.onProgressUpdate(player.getCurrentPosition() * 1000);
+        callback.onProgressUpdate(this.getCurrentTime());
         callback.onEnded();
     }
 

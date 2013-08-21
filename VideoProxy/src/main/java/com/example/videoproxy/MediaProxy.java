@@ -19,20 +19,20 @@ public class MediaProxy implements IMediaEventCallback {
     private final static String TAG = MediaProxy.class.getSimpleName();
 
     private WebView web;
-
-
     private MediaHandler mediaHandler;
-
+    private String mediaEventObj;
 
     public MediaProxy(WebView webView, MediaType mediaType) {
         web = webView;
         if (MediaType.audio == mediaType) {
             web.addJavascriptInterface(this, _Constant.GLOBAL_JS_AUDIO);
             mediaHandler = new AudioHandler(this);
+            mediaEventObj = _Constant.GLOBAL_JS_AUDIO_EVENT;
         }
         else if(MediaType.video == mediaType) {
             web.addJavascriptInterface(this, _Constant.GLOBAL_JS_VIDEO);
             mediaHandler = new VideoHandler((ViewGroup)web.getParent(), this);
+            mediaEventObj = _Constant.GLOBAL_JS_VIDEO_EVENT;
         }
     }
 
@@ -141,8 +141,8 @@ public class MediaProxy implements IMediaEventCallback {
             @Override
             public void run() {
                 float duration = mediaHandler.getDuration();
-                web.loadUrl(_Constant.VIDEO_EVENT_LOADEDMETADATA);
-                web.loadUrl(String.format(_Constant.VIDEO_EVENT_DURATIONCHANGE, duration));
+                web.loadUrl(String.format(_Constant.VIDEO_EVENT_LOADEDMETADATA, mediaEventObj));
+                web.loadUrl(String.format(_Constant.VIDEO_EVENT_DURATIONCHANGE, mediaEventObj, duration));
             }
         });
     }
@@ -152,7 +152,7 @@ public class MediaProxy implements IMediaEventCallback {
         web.post(new Runnable() {
             @Override
             public void run() {
-                web.loadUrl(_Constant.VIDEO_EVENT_SEEKED);
+                web.loadUrl(String.format(_Constant.VIDEO_EVENT_SEEKED, mediaEventObj));
             }
         });
     }
@@ -162,8 +162,8 @@ public class MediaProxy implements IMediaEventCallback {
         web.post(new Runnable() {
             @Override
             public void run() {
-                web.loadUrl(_Constant.VIDEO_EVENT_PLAY);
-                web.loadUrl(_Constant.VIDEO_EVENT_PLAYING);
+                web.loadUrl(String.format(_Constant.VIDEO_EVENT_PLAY, mediaEventObj));
+                web.loadUrl(String.format(_Constant.VIDEO_EVENT_PLAYING, mediaEventObj));
             }
         });
     }
@@ -173,7 +173,7 @@ public class MediaProxy implements IMediaEventCallback {
         web.post(new Runnable() {
             @Override
             public void run() {
-                web.loadUrl(_Constant.VIDEO_EVENT_PAUSE);
+                web.loadUrl(String.format(_Constant.VIDEO_EVENT_PAUSE, mediaEventObj));
             }
         });
     }
@@ -183,8 +183,8 @@ public class MediaProxy implements IMediaEventCallback {
         web.post(new Runnable() {
             @Override
             public void run() {
-                Log.d(TAG, "updateProgress: " + String.format(_Constant.VIDEO_EVENT_TIMEUPDATE, currentTime));
-                web.loadUrl(String.format(_Constant.VIDEO_EVENT_TIMEUPDATE, currentTime));
+                Log.d(TAG, "updateProgress: " + String.format(_Constant.VIDEO_EVENT_TIMEUPDATE, mediaEventObj, currentTime));
+                web.loadUrl(String.format(_Constant.VIDEO_EVENT_TIMEUPDATE, mediaEventObj, currentTime));
             }
         });
     }
@@ -194,7 +194,7 @@ public class MediaProxy implements IMediaEventCallback {
         web.post(new Runnable() {
             @Override
             public void run() {
-                web.loadUrl(_Constant.VIDEO_EVENT_ENDED);
+                web.loadUrl(String.format(_Constant.VIDEO_EVENT_ENDED, mediaEventObj));
             }
         });
     }

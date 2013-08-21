@@ -38,6 +38,12 @@ public class AudioHandler extends MediaHandler{
     }
 
     @Override
+    protected void dispose() {
+        super.dispose();
+        this.audio = null;
+    }
+
+    @Override
     protected void dispatchCustomMessage(Message msg) {
 
     }
